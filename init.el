@@ -27,7 +27,7 @@
     ag fiplr ace-window
     all-the-icons flycheck
     neotree pivotal-tracker
-    leuven-theme
+    green-phosphor-theme
     json json-rpc
 ))
 
@@ -98,7 +98,7 @@
 (keychain-refresh-environment)
 
 ;; Theme
-(load-theme 'leuven t)
+(load-theme 'green-phosphor t)
 
 ;; Git-gutter-fringe
 (require 'git-gutter-fringe+)
@@ -194,9 +194,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(linum ((t (:height 120 :foreground "#C0C0C0"))))
  '(highlight-indentation-face ((t (:background "#F0F0F0"))))
- '(neo-dir-link-face ((t (:foreground "black"))))
+ '(linum ((t (:height 120 :foreground "#C0C0C0"))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "grey"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "orange"))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "yellow"))))
@@ -230,6 +229,9 @@
      (dot . t)
      (ruby . t))))
  '(org-confirm-babel-evaluate nil)
+ '(package-selected-packages
+   (quote
+    (green-phosphor-theme zoom-window yaml-mode web-mode vue-mode transpose-frame smartparens scss-mode rust-mode rubocop rspec-mode rbenv rainbow-mode rainbow-delimiters racket-mode python-mode pyenv-mode-auto py-isort py-autopep8 pivotal-tracker org-present neotree nasm-mode multiple-cursors markdown-mode magit leuven-theme keychain-environment json-rpc json-mode js3-mode inf-ruby haskell-mode hackernews groovy-mode go-mode git-gutter-fringe+ foreman-mode flycheck fiplr elpy elm-mode dumb-jump dockerfile-mode better-defaults all-the-icons ag ace-window)))
  '(rbenv-show-active-ruby-in-modeline nil)
  '(ruby-align-to-stmt-keywords (quote (if begin case)))
  '(ruby-deep-indent-paren nil)
